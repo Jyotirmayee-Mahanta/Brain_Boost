@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - LETS LEARN HTML BY JYOTIRMAYEE MAHANTA</title>
+    <style>
+        table, th, td {
+            border: 3px solid black; /* CSS for table borders */
+            border="1" cellpadding="20" cellspacing="0"
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/244/9/297/html-programming-code-blue-wallpaper-preview.jpg'); /* Replace with your background image URL */
+            background-size: contain ; /* Cover the entire background */
+            background-position: bottom; /* Center the background image */
+            color: black; /* Set text color to black */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Tables</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>What is HTML Tables?</h2>
+            <p>
+                An HTML Table is an arrangement of data in rows and columns in tabular format. 
+                Tables are useful for various tasks, such as presenting text information and numerical data. 
+                A table is a useful tool for quickly and easily finding connections between different types of data. 
+                Tables are also used to create databases.
+            </p>
+        </section>
+
+        <section>
+            <h3>Defining Tables in HTML</h3>
+            <p>
+                An HTML table is defined with the <code>&lt;table&gt;</code> tag. Each table row is defined with the 
+                <code>&lt;tr&gt;</code> tag. A table header is defined with the <code>&lt;th&gt;</code> tag. By default, 
+                table headings are bold and centered. A table data/cell is defined with the <code>&lt;td&gt;</code> tag.
+            </p>
+        </section>
+
+        <section>
+            <h3>Table Cells</h3>
+            <p>
+                Table Cells are the building blocks for defining the Table. It is denoted with <code>&lt;td&gt;</code> 
+                as a start tag & <code>&lt;/td&gt;</code> as an end tag.
+            </p>
+            <h4>Syntax</h4>
+            <p><code>&lt;td&gt; Content... &lt;/td&gt;</code></p>
+        </section>
+
+        <section>
+            <h3>Table Rows</h3>
+            <p>
+                The rows can be formed with the help of a combination of Table Cells. It is denoted by 
+                <code>&lt;tr&gt;</code> and <code>&lt;/tr&gt;</code> tags as start & end tags.
+            </p>
+            <h4>Syntax</h4>
+            <p><code>&lt;tr&gt; Content... &lt;/tr&gt;</code></p>
+        </section>
+
+        <section>
+            <h3>Table Headers</h3>
+            <p>
+                The Headers are generally used to provide the Heading. The Table Headers can also be used to add the 
+                heading to the Table. This contains the <code>&lt;th&gt;</code> and <code>&lt;/th&gt;</code> tags.
+            </p>
+            <h4>Syntax</h4>
+            <p><code>&lt;th&gt; Content... &lt;/th&gt;</code></p>
+        </section>
+
+        <section>
+            <h3>Example 1: Creating a Simple Table in HTML</h3>
+            <pre>
+<code>
+&lt;!-- index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Book Name&lt;/th&gt;
+            &lt;th&gt;Author Name&lt;/th&gt;
+            &lt;th&gt;Genre&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The Book Thief&lt;/td&gt;
+            &lt;td&gt;Markus Zusak&lt;/td&gt;
+            &lt;td&gt;Historical Fiction&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The Cruel Prince&lt;/td&gt;
+            &lt;td&gt;Holly Black&lt;/td&gt;
+            &lt;td&gt;Fantasy&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The Silent Patient&lt;/td&gt;
+            &lt;td&gt;Alex Michaelides&lt;/td&gt;
+            &lt;td&gt;Psychological Fiction&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code>
+            </pre>
+            <h4>Output:</h4>
+            <p>HTML Table</p>
+            <table>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Genre</th>
+                </tr>
+                <tr>
+                    <td>The Book Thief</td>
+                    <td>Markus Zusak</td>
+                    <td>Historical Fiction</td>
+                </tr>
+                <tr>
+                    <td>The Cruel Prince</td>
+                    <td>Holly Black</td>
+                    <td>Fantasy</td>
+                </tr>
+                <tr>
+                    <td>The Silent Patient</td>
+                    <td>Alex Michaelides</td>
+                    <td>Psychological Fiction</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Tags used in HTML Tables</h3>
+            <table>
+                <tr>
+                    <th>HTML Tags</th>
+                    <th>Descriptions</th>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Defines the structure for organizing data in rows and columns within a web page.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Represents a row within an HTML table, containing individual cells.</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Shows a table header cell that typically holds titles or headings.</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Represents a standard data cell, holding content or data.</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Provides a title or description for the entire table.</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Defines the header section of a table, often containing column labels.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Represents the main content area of a table, separating it from the header or footer.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Specifies the footer section of a table, typically holding summaries or totals.</td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Defines attributes for table columns that can be applied to multiple columns at once.</td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Groups together a set of columns in a table to which you can apply formatting or properties collectively.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Adding a Border to an HTML Table</h3>
+            <p>
+                A border is set using the CSS border property. If you do not specify a border for the table, it will be displayed without borders.
+            </p>
+            <h4>Syntax</h4>
+            <pre>
+<code>
+table, th, td {
+    border: 1px solid black; /* CSS for table borders */
+}
+</code>
+            </pre>
+            <h3>Example: Addition of the Border to the HTML Table</h3>
+            <pre>
+<code>
+&lt;!-- index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        table, th, td {
+            border: 1px solid black; /* CSS for table borders */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;table style=&quot;width:100%&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Priya&lt;/td&gt;
+            &lt;td&gt;Sharma&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Arun&lt;/td&gt;
+            &lt;td&gt;Singh&lt;/td&gt;
+            &
+            <a href="index.html">Back to Home</a>
