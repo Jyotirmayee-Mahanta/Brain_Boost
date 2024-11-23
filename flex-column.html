@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Column Demo</title>
+    <style>
+        .container {
+    display: flex;
+    height: 700px;
+    border: 2px solid black
+}
+.column-Dimen{
+    width:50px;
+    height: 100%;
+    border: 2px solid black
+}
+.c1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.c2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c3 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.c4 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.red {
+    background-color: red;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.green {
+    background-color: green;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.blue {
+    background-color: blue;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.box-dimen {
+    width: 100px;
+    height: 100px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="c1 column-Dimen">
+            <div class="red box-dimen"></div>
+            <div class="green box-dimen"></div>
+            <div class="blue box-dimen"></div>
+        </div>
+
+        <div class="c2 column-Dimen">
+            <div class="red box-dimen"></div>
+            <div class="green box-dimen"></div>
+            <div class="blue box-dimen"></div>
+        </div>
+
+        <div class="c3 column-Dimen">
+            <div class="red box-dimen"></div>
+            <div class="green box-dimen"></div>
+            <div class="blue box-dimen"></div>
+        </div>
+        <div class="c4 column-Dimen">
+            <div class="red box-dimen"></div>
+            <div class="green box-dimen"></div>
+            <div class="blue box-dimen"></div>
+        </div>
+    </div>
+</body>
+
+</html>
