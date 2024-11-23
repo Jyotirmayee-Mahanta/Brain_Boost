@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout COLUMN</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    border: 2px solid black;
+    width: 80%;
+    height: 100px;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100%;
+}
+
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+
+.row1 {
+    justify-content: flex-start;
+}
+
+.row2 {
+    justify-content: center
+}
+
+.row3 {
+    justify-content: flex-end;
+}
+
+.row4 {
+    justify-content: space-evenly;
+}
+
+    </style>
+</head>
+<body>
+    <header>Jyotirmayee Mahanta</header>
+    <div class="container row1">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+
+    <div class="container row2">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+
+    <div class="container row3">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+
+    <div class="container row4">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+</html>
