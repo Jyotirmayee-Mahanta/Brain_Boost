@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Clone</title>
+   <style>
+    /* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-family:  monospace;
+}
+
+header {
+    background-color: #111;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    margin: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Courier New', monospace;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 10px;
+}
+
+.recent-posts, .recent-reads {
+    margin: 30px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.recent-posts h2, .recent-reads h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.post, .read-item {
+    background-color: #111;
+    padding: 20px;
+    border: 1px solid #333;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.post h3, .read-item h3 {
+    color: #fff;
+}
+
+.post p, .read-item p {
+    color: #ccc;
+}
+
+.random-post {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(118, 118, 117) ;
+    text-decoration: none;
+}
+
+.tags span {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    color: #ddd;
+}
+
+.read-item a {
+    color: rgb(118, 118, 117);;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #111;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: rgb(118, 118, 117);
+    text-decoration: none;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Nelson Figueroa</h1>
+            <p>Software Engineer</p>
+            <div class="social-icons">
+                <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="rss-icon.png" alt="RSS"></a>
+                <a href="#"><img src="coffee-icon.png" alt="Support"></a>
+            </div>
+        </section>
+
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div class="post">
+                <h3>Preserve Child Objects When Parent Objects Are Deleted in Ruby on Rails</h3>
+                <p>Use “dependent: :nullify” to prevent child objects from getting deleted.</p>
+                <small>2024-11-18 - 152 words</small>
+                <div class="tags">
+                    <span>Ruby on Rails</span>
+                    <span>Ruby</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h3>Remove Shadows From Screenshots in macOS</h3>
+                <p>How to remove annoying shadows on MacOS screenshots.</p>
+                <small>2024-10-05 - 121 words</small>
+                <div class="tags">
+                    <span>MacOS</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h3>AI-Generated Images Discourage Me From Reading Your Blog</h3>
+                <p>If you're willing to use AI-generated images, how do I know the text isn’t AI-generated?</p>
+                <small>2024-10-01 - 104 words</small>
+                <div class="tags">
+                    <span>AI</span>
+                    <span>Blogs</span>
+                    <span>Opinion</span>
+                </div>
+            </div>
+
+            <a href="#" class="random-post">Or see a random post »</a>
+        </section>
+
+        <section class="recent-reads">
+            <h2>Recent Reads</h2>
+            <p>Posts from other blogs I enjoyed.</p>
+            <div class="read-item">
+                <h3>How to summon RCEs</h3>
+                <a href="https://thatsn0tmy.site/posts/2021/12/how-to-summon-rces/" target="_blank">
+                    https://thatsn0tmy.site/posts/2021/12/how-to-summon-rces/
+                </a>
+            </div>
+            <div class="read-item">
+                <h3>Take care of yourself</h3>
+                <a href="https://crankysec.com/blog/care/" target="_blank">
+                    https://crankysec.com/blog/care/
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2019 - 2024 <a href="https://nelson.cloud">nelson.cloud</a> | <a href="#">Support This Blog</a> | Built with Hugo & PaperMod | Organic content free from AI :)</p>
+    </footer>
+</body>
+</html>
