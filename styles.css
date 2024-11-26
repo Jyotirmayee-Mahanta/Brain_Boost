@@ -7,8 +7,11 @@ body{
     text-align: center;
     color:white;
 }
+div {
+    padding-left: 10rem;
+}    
 table {
-    width: 100%;
+    width: 90%;
     border-color: aliceblue;
 }
 
@@ -17,7 +20,7 @@ table ,th, td {
 }
 
 th, td {
-    padding: 15px;
+    padding: 8px;
     text-align: center;
 }
 nav {
