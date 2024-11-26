@@ -14,11 +14,9 @@ table {
     width: 90%;
     border-color: aliceblue;
 }
-
-table ,th, td {
+table, th, td {
     border-color: 1px white;
 }
-
 th, td {
     padding: 8px;
     text-align: center;
